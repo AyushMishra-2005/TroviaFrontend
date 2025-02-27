@@ -1,0 +1,135 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-main-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  width: 405px;
+  background-color: #FFFFFF;
+  border-radius: 2rem;
+}
+
+.login-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 405px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #D3D3D3;
+  margin: 5px;
+}
+
+.divider span {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #B0B0B0;
+  font-weight: bold;
+}
+
+
+.my-form-label{
+  color: #BFBFBF;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.my-input{
+  width: 335px;
+  height: 36px;
+  border: 1px solid #F5F3F7;
+  border-radius: 4px;
+  background-color: #F4F1F7;
+}
+
+.my-small-input{
+  width: 155px;
+  height: 36px;
+  border: 1px solid #F5F3F7;
+  border-radius: 4px;
+  background-color: #F4F1F7;
+}
+
+.Login-heading h1{
+  color: #7b7b7b;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.login-down{
+  height: auto;
+  justify-content: space-between;
+}
+
+.login-down-box{
+  display: flex;
+  flex-direction: row;
+  height: 44px;
+  width: 312px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F1F7;
+  border: 1px solid #F5F3F7;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.login-down-button button{
+  height: 34px;
+  width: 314px;
+  background-color: #3B1C4D;
+  border: 1px solid #F5F3F7;
+  border-radius: 28px;
+  color: #EDEDED;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 45px;
+}
+
+.my-btn:hover{
+  background-color: orange !important;
+}
+
+.login-down-box{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.login-down-box a{
+  text-decoration: none;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #ACACAC;
+}
+
+.login-down-box img{
+  height: 27px;
+  width: 27px;
+  margin-left: auto;
+}
+
