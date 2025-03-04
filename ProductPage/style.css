@@ -425,43 +425,73 @@ button{
 
 /* page - 5 */
 
-.swiper {
-  width: 100vw;
-  height: 300px;
-  padding: 20px;
+.scroll-container {
+  width: 100%;
   overflow: hidden;
-  border-radius: 20px;
-}
-
-.swiper-wrapper {
+  white-space: nowrap;
+  position: relative;
   display: flex;
-  transition-timing-function: linear !important;
+  padding: 5px;
 }
 
-.swiper-slide {
-  width: 250px;
-  height: 250px;
+.scroll-wrapper {
+  display: flex;
+  gap: 45px;
+  animation: scrollRight 30s linear infinite;
+  margin-bottom: 40px;
+}
+
+.scroll-wrapper.reverse {
+  animation: scrollLeft 30s linear infinite;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
-  background: #ffffff;
-  border-radius: 20px;
-  margin: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: scale(1.03);
+}
+
+.box:nth-child(even) {
+  background: #4682b4;
+}
+
+@keyframes scrollRight {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .page5 {
   height: calc(100vh - 60px);
   background-color: #EDEDEC;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .page5-box {
-  height: 220px;
-  width: 220px;
+  width: 300px;
+  height: 300px;
   border-radius: 40px;
   background-color: #FFFFFF;
   display: flex;
@@ -506,7 +536,6 @@ button{
   align-items: center;
   justify-content: space-between;
   background-color: #3B1C4D;
-  margin-top: 100px;
 }
 
 .footer-right{
@@ -595,6 +624,27 @@ button{
   color: #FFFFFF;
   margin-right: 290px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
